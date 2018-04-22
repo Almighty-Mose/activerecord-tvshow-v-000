@@ -25,6 +25,6 @@ class Show < ActiveRecord::Base
   end
 
   def self.shows_by_alphabetical_order
-    Show.order(name: :desc).flatten
+    Show.order(name: :asc).flatten
   end
 end
